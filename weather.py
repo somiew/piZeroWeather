@@ -19,10 +19,17 @@ while loop:
         temp_list = i.find(class_='top_temp')
         temp.append(temp_list.text)
 
+    # try to set degrees, otherwise continue and restart loop
+    try:
+        degrees = temp[0] + ' C'
+    except:
+        print('Something went wrong')
+        continue
+
     # fourletterphat-code
     flp.clear()
-    flp.print_str(temp[0] + ' C')    # degree sign not available in flp unfortunatly
+    flp.print_str(degrees)    # degree sign not available in flp
     flp.show()
     
-    print(temp[0] + '°C')    # print to console, because why not
+    print(degrees)    # print to console, because why not
     time.sleep(60)
