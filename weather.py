@@ -19,7 +19,7 @@ while loop:
 
     # fourletterphat-code
     flp.clear()
-    flp.print_sting(temp[0] + '°C')
+    flp.print_string(temp[0] + '°C')
     flp.show()
     
     #print(temp[0] + '°C')
